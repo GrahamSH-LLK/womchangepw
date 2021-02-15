@@ -11,5 +11,5 @@ const prompts = require('prompts');
  
   
 
-bcrypt.hash(response.pass, saltRounds, async function (err, hashedPassword) {console.log(hashedPassword)})
+bcrypt.hash(response.pass, saltRounds, async function (err, hashedPassword) {console.log('Set this as your password in MongoDB: ' + hashedPassword)})
 })();
